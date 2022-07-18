@@ -34,7 +34,7 @@ ul {
     transform: skew(5deg);
 }
 .banner div:last-child {
-    left: 1%;
+    right: 1%;
 }
 .banner div:last-child:hover{
     transform: skew(-5deg);
