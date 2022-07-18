@@ -18,7 +18,7 @@ ul {
     transition: transform 0.5s;
     border-radius: 3%;
     background: linear-gradient(lightblue, blue, darkblue);
-    animation: movement 1.5s infinite;
+    animation: movement 1.5s infinite ease-in-out;
 }
 .banner div a{
     display: block;
