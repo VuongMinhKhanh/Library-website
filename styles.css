@@ -1,4 +1,59 @@
 p {
     color: pink;
     background: lightblue;
+}:root {
+    --width: 80%;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+}
+.banner div{
+    border: 1px solid black;
+    font-size: 1.5rem;
+    width: calc((100% - var(--width))/2 - 2%);
+    margin: auto 0;
+    position: fixed;
+    display: block;
+    /*transition: transform 0.5s;*/
+    border-radius: 3%;
+    background: linear-gradient(lightblue, blue, darkblue);
+    animation: movement 1.5s infinite;
+}
+.banner div a{
+    display: block;
+    padding: 5rem 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+.banner div:first-child {
+    left: 1%;
+}
+.banner div:first-child:hover{
+    transform: skew(5deg);
+}
+.banner div:last-child {
+    left: 1%;
+}
+.banner div:last-child:hover{
+    transform: skew(-5deg);
+}
+@keyframes movement{
+    0% {
+        top: 10%;
+        transform: skew(2deg);
+    }
+    50%{
+        top: 70%;
+        transform: skew(-3deg);
+    }
+    100% {
+        top: 10%;
+        transform: skew(-5deg);
+    }
+}
+section {
+    width: var(--width);
+    margin: 0 auto;
 }
