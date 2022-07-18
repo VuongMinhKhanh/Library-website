@@ -15,7 +15,7 @@ ul {
     margin: auto 0;
     position: fixed;
     display: block;
-    /*transition: transform 0.5s;*/
+    transition: transform 0.5s;
     border-radius: 3%;
     background: linear-gradient(lightblue, blue, darkblue);
     animation: movement 1.5s infinite;
